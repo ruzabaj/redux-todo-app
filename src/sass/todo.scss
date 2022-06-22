@@ -1,0 +1,39 @@
+@import './config';
+
+body{
+    background-color: $background-color;
+}
+h3 a{
+    text-decoration: none;
+    color: $primary-color;
+}
+.todo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+input[type=text]{
+    width: 400px;
+    height: 20px;
+    padding: 10px;
+    border: 0;
+    border-radius: 05px;
+    box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 2.6px;
+}
+.btn-add{
+    width: 80px;
+    height: 30px;
+    margin-left: -100px;
+    background-color: $primary-color;
+    color: $secondary-color;
+    border: 0;
+}
+.select-categories{
+    display: flex;
+    margin-top: 10px;
+}
+select{
+   padding: 05px;
+   margin-left: 10px;
+}

@@ -14,3 +14,9 @@ export const deleteTodo=(id)=>{
         payload: id
     }
 }
+ export const removeTodo=(todo)=>{
+    return{
+        type:'REMOVE_TODO',
+        payload: todo
+    }
+ }

@@ -2,7 +2,7 @@ const initialData = {
     todos: [],
   };
   
-  const reducer = (state = initialData, action) => {
+  const Reducer = (state = initialData, action) => {
     switch (action.type) {
         case "ADD_TODO":
         return {
@@ -26,5 +26,5 @@ const initialData = {
         return state;
     }
   };
-  export default reducer;
+  export default Reducer;
   

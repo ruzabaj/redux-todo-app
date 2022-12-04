@@ -1,4 +1,4 @@
-import { egacy_createStore as createStore , applyMiddleware} from "redux";
+import { legacy_createStore as createStore , applyMiddleware} from "redux";
 import Reducer from "../Reducer/Reducer";
 import { createLogger } from "redux-logger";
 

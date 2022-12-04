@@ -4,7 +4,10 @@
 export const addTodo=(newTodo)=>{
     return{
         type: 'ADD_TODO',
-        payload : newTodo
+        payload :{
+            data: newTodo,
+            id: Math.ceil(Math.random()*100)
+        }
     }
 }
 

@@ -17,6 +17,7 @@ const Todos =()=>{
 const TodoInput=()=>{
   const dispatch =useDispatch();
   const [newTodo, setNewTodo]= useState('');
+  
   const handleChange= event=>{
     setNewTodo(event.target.value)
   }
@@ -32,6 +33,7 @@ const TodoInput=()=>{
       <div className="todo">
     <div className="input-todo">
     <input type="text" onChange={handleChange} value={newTodo}/>
+    {console.log("twxt from input", newTodo)}
      <button type="submit" className="btn-add" onClick={handleClick}>Add</button>
      </div>
      </div>
